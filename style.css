@@ -1,0 +1,31 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(180deg,#0b716c, #1a607e, #0f85aa);
+}
+picture{
+    padding: 10px;
+    margin: 30px;
+}
+h1{
+    background-color: #154644;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+main{
+    background-color: rgb(157, 206, 239);
+    width: 100%;
+    padding: 20px;
+    margin: 25px;
+}
+#cor{
+    color: rgb(6, 79, 55);
+}
+video{
+    padding: 10px;
+    margin: 30px;
+    /* width:"600px" */
+}
