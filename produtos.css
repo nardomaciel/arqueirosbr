@@ -1,0 +1,38 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-image: linear-gradient(180deg,#206643, #016634, #02B85E, #14c3c3);
+  background-attachment: fixed;
+}
+header{
+  background-color:#205d39;
+  border: 30px;
+  padding: 1.5%;
+}
+h1{
+  text-align: center;
+}
+.imagem { 
+    width: 100%;
+    }
+    .item {
+       display: flex;
+      flex-wrap: wrap;  
+    }
+  div {
+    background-color: #848080;
+    border-color: antiquewhite;
+    border-style: solid;
+    width: 20%;
+    margin: 1.5%;
+    text-align: center;
+    padding: 2%;
+  }
+  button{
+   border: 2%;
+   background-color: #0f85aa;
+  }
+  button:hover {
+background-color: rgb(191, 19, 19);
+  }
