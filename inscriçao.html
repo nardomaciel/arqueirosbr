@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        header{
+            background-color:#205d39;
+             border: 30px;
+             padding: 1.5%;
+        }
+    </style>
+    <header>
+        <h1>Arquearia Brasil</h1>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="diretrizes.html" target="_blank">diretrizes</a>
+            <a href="produtos.html" target="_blank">produtos</a>
+            <a href="contatos.html" target="_blank">contato</a>
+            <a href="inscriçao.html" target="_blank">inscrição</a>
+        </nav>
+    </header>
+        <hr> 
+    <div class="row mt-2">
+        <div class="col-6 offset-3">
+            <form method="post" action="../sismetro codigos/formularios.html">
+            <label>digite o seu nome</label>
+            <input name="nome:" type="text" class="form-control"
+            placeholder="nome:"/>
+
+            <label>e-mail</label>
+            <input name="e-mail" type="email" class="form-control" placeholder="e-mail">
+
+        <div class="row mt-3"> 
+            <div class="col-6 ">      
+                <label>senha</label>
+                <input name="senha" type="password" class="form-control" class="col-6 text-center" placeholder="senha:">
+            </div>   
+            <div class="col-6 ">
+                <label>confirmar senha</label>
+                <input name="senha" type="password" class="form-control" placeholder="confirme sua senha:">
+            </div>
+        </div>
+            <label>mensagem</label>
+            <textarea name="msg" placeholder="digite sua mensagem" class="form-control" rows="10"> 
+            </textarea>
+
+            <button type="button" class="btn btn-outline-primary">enviar</button>
+            <button type="button" class="btn btn-outline-danger">resetar</button>
+        </div>
+    </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
