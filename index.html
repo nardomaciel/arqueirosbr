@@ -3,51 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">  
-     <link rel="shortcut icon" href="logo-html-full2.png" type="x-icon">
-    <title>arquearia Brasil</title>
+    <meta name="description" content="Clube de tiro com arco com pista coberta, campo externo, aulas para iniciantes e loja de equipamentos.">
+    <title>Arquearia Brasil · clube de tiro com arco e loja</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-    <body>
-        <header>
-        <h1>Arquearia Brasil</h1>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="diretrizes.html" target="_blank">diretrizes</a>
-            <a href="produtos.html" target="_blank">produtos</a>
-            <a href="contatos.html" target="_blank">contato</a>
-            <a href="inscriçao.html" target="_blank">inscrição</a>
-        </nav>
-        <hr> 
-        <main>
-        </header>
+<body>
+    <header class="topo">
         <div class="container">
-            <img src="hobin.jpg" alt="arqueiro hobin">
-                <p>o melhor clube e loja integrado para melhor atender as suas necessidades esportivas na area contendo um club interno e diversos campeonatos para voce participar</p> 
-                 <h2>sobre nosso clube</h2>
-                 <p> Somos um clube dedicado aos amantes da arquearia, sejam eles iniciantes ou experientes. Aqui, oferecemos um ambiente acolhedor e seguro para que todos possam praticar e aprimorar suas habilidades com o arco e flecha.</p>
-                 <p> com anos de experiencia garantimos que você sera um novo campeão</p>
-                <p>a iscriçao para entrada do clube é muito simples, possuimos uma taxa de entrada e apos ela uma pequena quantia mensal para mantermos nosso clube de pé.</p>
-                <p>para fazer o seu cadastro primeiro leia nossas diretrizes e prencha  com seus dados </p>
-                <h3>beneficios oferecidos</h3>
-            <ol class="cor">
-                <li>Instrutores qualificados: Contamos com instrutores experientes e altamente qualificados, prontos para oferecer orientação e treinamento personalizado. Eles irão ajudá-lo a desenvolver sua técnica, postura e precisão, garantindo que você atinja seu máximo potencial como arqueiro.</li>
-                <br>
-                <li>Instalações modernas: Nossas instalações são equipadas com alvos profissionais, pistas de tiro de diferentes distâncias e todos os equipamentos necessários para a prática da arquearia. Tudo isso para garantir que você tenha uma experiência de tiro agradável e segura.</li>
-                <br>
-                <li>Comunidade acolhedora: Ao se juntar ao nosso clube, você terá a oportunidade de conhecer outros entusiastas da arquearia e fazer parte de uma comunidade apaixonada. Aqui, você poderá compartilhar suas experiências, trocar dicas e fazer novas amizades com pessoas que compartilham o mesmo interesse.</li>
-                <br>
-                <li>Competições e eventos: Regularmente, organizamos competições internas e externas, onde você poderá testar suas habilidades contra outros arqueiros. Além disso, também promovemos workshops, palestras e eventos especiais para aprimorar seu conhecimento sobre a história e a técnica da arquearia.</li>
-                <br>
-                <li>refiçoes inclusas</li>
-                    <ul>
-                        <li>cafe da manhã</li>
-                        <li>almoço</li>
-                        <li>lanche da tarde</li>
-                    </ul>
-                <li>venda e aluguel de equipamentos</li>
-            </ol>
-            <img id="alvo"src="alvo.jpg" alt="alvo de arco e flecha"> 
+            <a class="marca" href="index.html">
+                <span class="aneis" aria-hidden="true"></span>
+                <span class="marca-nome">Arquearia Brasil</span>
+            </a>
+            <nav class="menu">
+                <a href="#clube">O clube</a>
+                <a href="#modalidades">Modalidades</a>
+                <a href="#planos">Planos</a>
+                <a href="loja.html">Loja</a>
+                <a href="#visite">Contato</a>
+            </nav>
+            <button class="botao-carrinho" type="button" data-abrir-carrinho>
+                <span class="rotulo">Carrinho</span>
+                <span class="contador" data-contador hidden>0</span>
+            </button>
+            <button class="botao-menu" type="button" data-menu aria-label="abrir menu">menu</button>
         </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-texto">
+                    <span class="sobretitulo">Clube de tiro com arco · loja de equipamentos</span>
+                    <h1>Do primeiro tiro ao pódio, no mesmo clube.</h1>
+                    <p>Pista coberta, campo externo, instrutores e uma loja com tudo o que você precisa. Venha para uma aula experimental: o equipamento é por nossa conta.</p>
+                    <div class="hero-acoes">
+                        <a class="botao" href="produto.html?id=aula-experimental">Agendar aula experimental</a>
+                        <a class="botao botao-claro" href="loja.html">Conhecer a loja</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faixa" aria-label="o clube em números">
+            <div class="container">
+                <ul>
+                    <li><span class="numero">18 m</span>pista coberta, para treinar com chuva ou à noite</li>
+                    <li><span class="numero">70 m</span>campo externo, a distância olímpica</li>
+                    <li><span class="numero">3</span>modalidades: recurvo, composto e campo</li>
+                    <li><span class="numero">seg a sex</span>das 9h às 22h</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secao secao-clara" id="clube">
+            <div class="container duas-colunas">
+                <div>
+                    <span class="sobretitulo">Sobre o clube</span>
+                    <h2>Um lugar para aprender e para competir</h2>
+                    <p>Somos um clube dedicado aos amantes da arquearia, sejam eles iniciantes ou experientes. Aqui, oferecemos um ambiente acolhedor e seguro para que todos possam praticar e aprimorar suas habilidades com o arco e flecha.</p>
+                    <p>O clube e a loja funcionam juntos: você aprende com o equipamento da casa, aluga o que precisar e só compra quando já sabe o que combina com você.</p>
+                    <ul class="lista-check">
+                        <li>Instrutores que acompanham sua técnica, postura e precisão</li>
+                        <li>Alvos profissionais em várias distâncias</li>
+                        <li>Competições internas e externas ao longo do ano</li>
+                    </ul>
+                </div>
+                <img class="foto-arredondada" src="img/site/pista-coberta.jpg" alt="pista coberta de tiro com arco, com alvos alinhados no fundo">
+            </div>
+        </section>
+
+        <section class="secao" id="modalidades">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="sobretitulo">Modalidades</span>
+                    <h2>Escolha o seu arco</h2>
+                    <p>Na aula experimental você testa os três. Não precisa decidir antes.</p>
+                </div>
+                <div class="modalidades">
+                    <article class="modalidade">
+                        <img src="img/site/recurvo.jpg" alt="arqueiro com arco recurvo em posição de tiro" loading="lazy">
+                        <div>
+                            <span class="distancia">18 a 70 m</span>
+                            <h3>Recurvo</h3>
+                            <p>O arco das Olimpíadas. É por onde quase todo mundo começa: leve, simples de montar e exige técnica, não força.</p>
+                        </div>
+                    </article>
+                    <article class="modalidade">
+                        <img src="img/site/composto.jpg" alt="arco composto apoiado no campo" loading="lazy">
+                        <div>
+                            <span class="distancia">18 a 50 m</span>
+                            <h3>Composto</h3>
+                            <p>Polias aliviam o peso no fim da puxada e a mira é mais precisa. Para quem gosta de equipamento e de ajuste fino.</p>
+                        </div>
+                    </article>
+                    <article class="modalidade">
+                        <img src="img/site/campo.jpg" alt="arqueira atirando em alvo no meio da mata" loading="lazy">
+                        <div>
+                            <span class="distancia">percurso na mata</span>
+                            <h3>Campo</h3>
+                            <p>Alvos espalhados em distâncias variadas, subindo e descendo terreno. A arquearia mais próxima da natureza.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-verde">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="sobretitulo">Como começar</span>
+                    <h2>Três passos até o seu primeiro campeonato</h2>
+                </div>
+                <ol class="passos">
+                    <li>
+                        <h3>Aula experimental</h3>
+                        <p>Uma hora na pista coberta com instrutor. Você aprende postura e soltura e já atira na primeira meia hora.</p>
+                    </li>
+                    <li>
+                        <h3>Leia as diretrizes e inscreva-se</h3>
+                        <p>Conheça as <a href="diretrizes.html" style="color: var(--dourado);">regras do clube</a> e preencha a inscrição. O valor da aula experimental é descontado.</p>
+                    </li>
+                    <li>
+                        <h3>Treine com o equipamento da casa</h3>
+                        <p>Alugue arco e flechas enquanto evolui. Quando quiser o seu, nossos instrutores ajudam a escolher na loja.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="secao" id="planos">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="sobretitulo">Planos</span>
+                    <h2>Uma taxa de entrada e uma mensalidade pequena</h2>
+                    <p>A inscrição é simples: você paga a entrada uma vez e depois uma quantia mensal que mantém o clube de pé.</p>
+                </div>
+                <div class="planos">
+                    <article class="plano">
+                        <h3>Aula experimental</h3>
+                        <p class="preco-plano">R$ 60 <small>por aula</small></p>
+                        <ul class="lista-check">
+                            <li>1 hora com instrutor</li>
+                            <li>Equipamento incluso</li>
+                            <li>Valor descontado na inscrição</li>
+                        </ul>
+                        <a class="botao botao-contorno botao-largo" href="produto.html?id=aula-experimental">Agendar</a>
+                    </article>
+                    <article class="plano plano-destaque">
+                        <span class="selo">mais escolhido</span>
+                        <h3>Sócio</h3>
+                        <p class="preco-plano">R$ 180 <small>por mês</small></p>
+                        <ul class="lista-check">
+                            <li>Pista coberta e campo externo liberados</li>
+                            <li>Duas aulas em grupo por semana</li>
+                            <li>Aluguel de equipamento com desconto</li>
+                            <li>Café da manhã, almoço e lanche nos dias de treino</li>
+                        </ul>
+                        <a class="botao botao-largo" href="inscricao.html">Quero me inscrever</a>
+                    </article>
+                    <article class="plano">
+                        <h3>Atleta</h3>
+                        <p class="preco-plano">R$ 260 <small>por mês</small></p>
+                        <ul class="lista-check">
+                            <li>Tudo do plano Sócio</li>
+                            <li>Treino individual com instrutor</li>
+                            <li>Inscrição nas competições do clube</li>
+                            <li>Regulagem de equipamento inclusa</li>
+                        </ul>
+                        <a class="botao botao-contorno botao-largo" href="inscricao.html">Quero me inscrever</a>
+                    </article>
+                </div>
+                <p class="nota">Taxa de entrada de R$ 150, paga uma vez, para os planos Sócio e Atleta.</p>
+            </div>
+        </section>
+
+        <section class="secao secao-clara">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="sobretitulo">O que você ganha</span>
+                    <h2>Benefícios de quem é do clube</h2>
+                </div>
+                <div class="beneficios">
+                    <div class="beneficio">
+                        <h3>Instrutores qualificados</h3>
+                        <p>Orientação e treinamento personalizado para desenvolver técnica, postura e precisão, até você atingir seu máximo potencial como arqueiro.</p>
+                    </div>
+                    <div class="beneficio">
+                        <h3>Instalações completas</h3>
+                        <p>Alvos profissionais, pistas de diferentes distâncias e todo o equipamento necessário para uma experiência de tiro agradável e segura.</p>
+                    </div>
+                    <div class="beneficio">
+                        <h3>Comunidade acolhedora</h3>
+                        <p>Gente que compartilha o mesmo interesse, troca dicas e faz amizade na pista e fora dela.</p>
+                    </div>
+                    <div class="beneficio">
+                        <h3>Competições e eventos</h3>
+                        <p>Provas internas e externas, workshops e palestras sobre a história e a técnica da arquearia.</p>
+                    </div>
+                    <div class="beneficio">
+                        <h3>Refeições inclusas</h3>
+                        <p>Café da manhã, almoço e lanche da tarde nos dias de treino, para quem passa o dia no clube.</p>
+                    </div>
+                    <div class="beneficio">
+                        <h3>Venda e aluguel</h3>
+                        <p>Equipamento para alugar enquanto você aprende e uma loja para quando quiser o seu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="loja">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <div class="titulo-secao">
+                        <span class="sobretitulo">Loja</span>
+                        <h2>Equipamento escolhido por quem atira</h2>
+                    </div>
+                    <a class="botao botao-contorno" href="loja.html">Ver todos os produtos</a>
+                </div>
+                <div class="grade-produtos" id="destaques"></div>
+            </div>
+        </section>
+
+        <section class="secao secao-verde" id="visite">
+            <div class="container visite">
+                <div>
+                    <span class="sobretitulo">Contato</span>
+                    <h2>Venha conhecer a pista</h2>
+                    <p>Se você tiver alguma dúvida, sugestão ou quiser marcar uma visita, fale com a gente. Respondemos rápido e adoramos receber gente nova.</p>
+                    <p>Acompanhe o clube no Instagram: <a href="https://www.instagram.com/arqueariabrasil._.oficial/" target="_blank" rel="noopener" style="color: var(--dourado);">@arqueariabrasil._.oficial</a></p>
+                    <div class="hero-acoes" style="margin-top: 24px;">
+                        <a class="botao botao-claro" href="inscricao.html">Fazer inscrição</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Horários</h3>
+                    <table class="horarios">
+                        <tr><td>Segunda a sexta</td><td>9h às 22h</td></tr>
+                        <tr><td>Aulas para iniciantes</td><td>terças e quintas, 19h</td></tr>
+                        <tr><td>Loja</td><td>mesmo horário do clube</td></tr>
+                        <tr><td>Sábados</td><td>competições e eventos</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
-    </body>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-colunas">
+                <div>
+                    <a class="marca" href="index.html">
+                        <span class="aneis" aria-hidden="true"></span>
+                        <span class="marca-nome">Arquearia Brasil</span>
+                    </a>
+                    <p style="margin-top: 14px;">Clube de tiro com arco e loja integrada.</p>
+                </div>
+                <div>
+                    <h3>Clube</h3>
+                    <ul>
+                        <li><a href="index.html#clube">Sobre</a></li>
+                        <li><a href="index.html#planos">Planos</a></li>
+                        <li><a href="diretrizes.html">Diretrizes</a></li>
+                        <li><a href="inscricao.html">Inscrição</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Loja</h3>
+                    <ul>
+                        <li><a href="loja.html">Todos os produtos</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="creditos.html">Créditos das fotos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="rodape-fim">Site de estudo feito por Leonardo Maciel. O clube e a loja são fictícios: nenhum pedido é cobrado ou entregue.</p>
+        </div>
+    </footer>
+
+    <div class="fundo-gaveta" data-fechar-carrinho></div>
+    <aside class="gaveta" id="gaveta" aria-hidden="true" aria-label="carrinho">
+        <div class="gaveta-topo">
+            <h2>Carrinho</h2>
+            <button class="fechar" type="button" data-fechar-carrinho aria-label="fechar carrinho">×</button>
+        </div>
+        <ul class="gaveta-itens" id="gaveta-itens"></ul>
+        <div class="gaveta-rodape" id="gaveta-rodape" hidden>
+            <div class="linha-total"><span>Total</span><span id="gaveta-total">R$ 0,00</span></div>
+            <a class="botao botao-largo" href="carrinho.html">Finalizar pedido</a>
+        </div>
+    </aside>
+
+    <script src="js/produtos.js"></script>
+    <script src="js/carrinho.js"></script>
+    <script>
+        const destaques = ["arco-recurvo", "kit-iniciante", "flechas-carbono", "face-122"];
+        const grade = document.getElementById("destaques");
+        grade.innerHTML = destaques.map(function (id) { return cardDoProduto(buscarProduto(id)); }).join("");
+        ligarBotoesComprar(grade);
+    </script>
+</body>
 </html>

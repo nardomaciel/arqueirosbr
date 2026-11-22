@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscrição no clube Arquearia Brasil.">
+    <title>Inscrição · Arquearia Brasil</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <a class="marca" href="index.html">
+                <span class="aneis" aria-hidden="true"></span>
+                <span class="marca-nome">Arquearia Brasil</span>
+            </a>
+            <nav class="menu">
+                <a href="index.html#clube">O clube</a>
+                <a href="index.html#modalidades">Modalidades</a>
+                <a href="index.html#planos">Planos</a>
+                <a href="loja.html">Loja</a>
+                <a href="index.html#visite">Contato</a>
+            </nav>
+            <button class="botao-carrinho" type="button" data-abrir-carrinho>
+                <span class="rotulo">Carrinho</span>
+                <span class="contador" data-contador hidden>0</span>
+            </button>
+            <button class="botao-menu" type="button" data-menu aria-label="abrir menu">menu</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="cabecalho-pagina">
+            <div class="container">
+                <span class="sobretitulo">Inscrição</span>
+                <h1>Faça parte do clube</h1>
+                <p>Preencha seus dados e escolha o plano. Entramos em contato para marcar a sua primeira aula.</p>
+            </div>
+        </section>
+        <div class="container texto">
+            <form class="caixa" id="form-inscricao">
+                <label for="i-nome">Nome completo</label>
+                <input id="i-nome" name="nome" type="text" autocomplete="name" required>
+                <div class="campos-duplos">
+                    <div>
+                        <label for="i-email">E-mail</label>
+                        <input id="i-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="i-telefone">Telefone</label>
+                        <input id="i-telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+                <div class="campos-duplos">
+                    <div>
+                        <label for="i-plano">Plano</label>
+                        <select id="i-plano" name="plano">
+                            <option>Sócio · R$ 180 por mês</option>
+                            <option>Atleta · R$ 260 por mês</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="i-nivel">Experiência</label>
+                        <select id="i-nivel" name="nivel">
+                            <option>nunca atirei</option>
+                            <option>iniciante</option>
+                            <option>intermediário</option>
+                            <option>avançado</option>
+                        </select>
+                    </div>
+                </div>
+                <label>Já tem equipamento próprio?</label>
+                <label class="opcao"><input type="radio" name="equipamento" value="sim"> <span><strong>Sim</strong></span></label>
+                <label class="opcao"><input type="radio" name="equipamento" value="nao" checked> <span><strong>Não</strong><span>Você treina com o equipamento do clube.</span></span></label>
+                <label for="i-mensagem">Mensagem</label>
+                <textarea id="i-mensagem" name="mensagem" rows="4" placeholder="conte um pouco sobre você"></textarea>
+                <label class="opcao"><input type="checkbox" name="aceite" required> <span>Li e aceito as <a href="diretrizes.html">diretrizes do clube</a>.</span></label>
+                <p style="margin-top: 24px;"><button class="botao botao-largo" type="submit">Enviar inscrição</button></p>
+                <p class="nota" id="aviso-inscricao" hidden></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-colunas">
+                <div>
+                    <a class="marca" href="index.html">
+                        <span class="aneis" aria-hidden="true"></span>
+                        <span class="marca-nome">Arquearia Brasil</span>
+                    </a>
+                    <p style="margin-top: 14px;">Clube de tiro com arco e loja integrada.</p>
+                </div>
+                <div>
+                    <h3>Clube</h3>
+                    <ul>
+                        <li><a href="index.html#clube">Sobre</a></li>
+                        <li><a href="index.html#planos">Planos</a></li>
+                        <li><a href="diretrizes.html">Diretrizes</a></li>
+                        <li><a href="inscricao.html">Inscrição</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Loja</h3>
+                    <ul>
+                        <li><a href="loja.html">Todos os produtos</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="creditos.html">Créditos das fotos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="rodape-fim">Site de estudo feito por Leonardo Maciel. O clube e a loja são fictícios: nenhum pedido é cobrado ou entregue.</p>
+        </div>
+    </footer>
+
+    <div class="fundo-gaveta" data-fechar-carrinho></div>
+    <aside class="gaveta" id="gaveta" aria-hidden="true" aria-label="carrinho">
+        <div class="gaveta-topo">
+            <h2>Carrinho</h2>
+            <button class="fechar" type="button" data-fechar-carrinho aria-label="fechar carrinho">×</button>
+        </div>
+        <ul class="gaveta-itens" id="gaveta-itens"></ul>
+        <div class="gaveta-rodape" id="gaveta-rodape" hidden>
+            <div class="linha-total"><span>Total</span><span id="gaveta-total">R$ 0,00</span></div>
+            <a class="botao botao-largo" href="carrinho.html">Finalizar pedido</a>
+        </div>
+    </aside>
+
+    <script src="js/produtos.js"></script>
+    <script src="js/carrinho.js"></script>
+    <script>
+        document.getElementById("form-inscricao").addEventListener("submit", function (evento) {
+            evento.preventDefault();
+            const aviso = document.getElementById("aviso-inscricao");
+            aviso.textContent = "Inscrição recebida, " + this.elements.nome.value.split(" ")[0] + "! Este é um site de estudo, então nenhum dado foi enviado.";
+            aviso.hidden = false;
+            this.querySelector("button").disabled = true;
+        });
+    </script>
+</body>
+</html>
